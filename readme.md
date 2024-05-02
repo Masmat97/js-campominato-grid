@@ -3,4 +3,4 @@ GRID
 -creare successivamente la griglia in js;
 -inserire numero e colore;
 -aggiungere il click sulla cella;
--
+-<>

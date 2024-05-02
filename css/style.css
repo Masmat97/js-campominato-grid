@@ -21,7 +21,16 @@ body {
 	height: 100px;
 	border: solid 2px blue;
 }
-
+.square-9{
+	width: 90px;
+	height: 90px;
+	border: solid 2px yellow;
+}
+.square-7{
+	width: 90px;
+	height: 90px;
+	border: solid 2px violet;
+}
 .cambio{
     background-color: white;
 }
