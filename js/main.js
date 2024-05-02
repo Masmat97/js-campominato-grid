@@ -1,7 +1,7 @@
 let griglia = document.getElementById("grid");
 
-for(let i = 1; i <= 100; i++){
-    
+for (let i = 1; i <= 100; i++) {
+
     // let square = document.createElement("div");
     // square.classList.add("square");
     // square.innerText = i;
@@ -9,15 +9,26 @@ for(let i = 1; i <= 100; i++){
     griglia.append(elemento);
 }
 
-function creaQuadrato(contenuto){
+function creaQuadrato(contenuto) {
     let square = document.createElement("div");
-	square.classList.add("square");
+    square.classList.add("square");
     square.innerText = contenuto;
 
 
-    square.addEventListener("click", function(){
+    square.addEventListener("click", function () {
         console.log(this);
-        this.classList.add("cambio")
+
+
+        if(this.classList.contains("cambio")){
+            this.classList.remove("cambio");
+        }else {
+            this.classList.add("cambio");
+
+        }
+           
+        
+            
+
     });
 
     return square
