@@ -2,33 +2,33 @@ let griglia = document.getElementById("grid");
 let start = document.getElementById("start");
 let select = document.getElementById("difficult");
 
-start.addEventListener("click", function(){
+start.addEventListener("click", function () {
     if (select.value == "easy") {
-        griglia.innerHTML = ""
+
         for (let i = 1; i <= 100; i++) {
             console.log(i);
             let elemento = creaQuadrato(i);
             griglia.append(elemento);
         }
-    } else if(select.value == "medium") {
-        griglia.innerHTML = ""
+    } else if (select.value == "medium") {
+
         for (let i = 1; i <= 81; i++) {
             console.log(i);
             let elemento = creaQuadrato(i);
-            square.classList.add("square-9");
+            elemento.classList.add("square-9");
             griglia.append(elemento);
-            
-    } 
-        
-    } else if(select.value == "hard") {
-        griglia.innerHTML = ""
+
+        }
+
+    } else if (select.value == "hard") {
+
         for (let i = 1; i <= 49; i++) {
             console.log(i);
             let elemento = creaQuadrato(i);
-            square.classList.add("square-7");
+            elemento.classList.add("square-7");
             griglia.append(elemento);
-        }   
-    } 
+        }
+    }
 
 })
 
@@ -48,7 +48,7 @@ function creaQuadrato(contenuto) {
             this.classList.add("cambio");
         }
 
-        
+
     });
 
     return square
@@ -57,4 +57,3 @@ function creaQuadrato(contenuto) {
 
 
 
-    
